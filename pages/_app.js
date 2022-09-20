@@ -1,7 +1,7 @@
+import "antd/dist/antd.css";
 import "../styles/iranYekanFont.css";
 import "../styles/variables.css";
 import "../styles/globals.css";
-import "antd/dist/antd.css";
 import "../styles/antCustomization.css";
 import { ConfigProvider } from "antd";
 import fa from "antd/lib/locale/fa_IR";

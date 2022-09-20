@@ -6,7 +6,7 @@ const NavbarSearch = () => {
 	return (
 		<TcInput
 			size="small"
-			className="max-w-[500px] w-full h-10"
+			className="w-full h-10 "
 			placeholder="جستجوی محصول"
 			prefix={<SearchIcon />}
 		/>

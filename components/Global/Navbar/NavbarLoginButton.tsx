@@ -13,6 +13,7 @@ const NavbarLoginButton = () => {
 				/>
 			}
 			style={{ height: "2.5rem" }}
+			className="text-sm font-bold"
 		>
 			ورود / عضویت
 		</TcButton>
