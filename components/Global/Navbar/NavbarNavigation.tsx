@@ -1,17 +1,25 @@
 import NavbarNavigationItems from "components/Global/Navbar/NavbarNavigationItems";
 import CategoryIcon from "components/UI/Icons/CategoryIcon";
-import Link from "next/link";
 import { FC } from "react";
 import { separator } from "utils/helperFunctions/basicFunctions";
 
-interface INavbarNavigation {}
+interface INavbarNavigation {
+	setShowCategory: (boolean) => void;
+}
 
-const NavbarNavigation: FC<INavbarNavigation> = () => {
+const NavbarNavigation: FC<INavbarNavigation> = ({
+	setShowCategory,
+}) => {
 	return (
-		<div className="hidden h-[60px] border-b border-t-border-color-24 text-sm font-bold md:flex items-center">
-			<div className="flex items-center justify-between t-container">
+		<div className="hidden relative h-[60px] border-b border-t-border-color-24 text-sm font-bold md:flex items-center">
+			<div className="flex items-center justify-between t-container ">
 				<div className="flex items-center">
-					<div className="flex h-[60px] items-center pl-4 cursor-pointer gap-x-1 w-fit">
+					<div
+						className="flex h-[60px] items-center pl-4 cursor-pointer gap-x-1 w-fit"
+						onMouseEnter={() => setShowCategory(true)}
+						onMouseOver={() => setShowCategory(true)}
+						onMouseLeave={() => setShowCategory(false)}
+					>
 						<CategoryIcon width="20" height="20" />
 						دسته بندی ها
 					</div>

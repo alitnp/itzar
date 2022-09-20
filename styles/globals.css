@@ -26,6 +26,16 @@ a {
     padding: 0 8px;
 }
 
+.buttun-zar,
+.buttun-zar:hover,
+.buttun-zar:focus {
+    border-radius: 0 !important;
+    height: 48px !important;
+    box-shadow: -3px 4px 0 0 black !important;
+    border-color: #2F3943 !important;
+    color: var(--text-color)
+}
+
 @media only screen and (min-width: 992px) {
     .t-container {
         max-width: 990px;
