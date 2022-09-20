@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #1890FF;
+    --secondary-color: #1CB561;
+    --text-color: #242424;
+    --secondary-text-color: #637381;
+    --bg-gray: #F7F7F7;
+    --bg-color: #FFFFFF;
+    --info-color: #1890FF;
+    --success-color: #2CD36F;
+    --warning-color: #FFC107;
+    --error-color: #C62828;
+    --border-color-base: #919EAB;
+    --border-color-50: #919eab80;
+    --border-color-24: #919eab3d;
+    --border-color-16: #919eab29;
+    --btn-bg-color: #2F3943;
+    --btn-hover-bg-color: #384450;
+}

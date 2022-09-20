@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "checkJs": true,
+    "jsx": "react"
+  },
+  "checkJs": true,
+  "exclude": ["node_modules", "build"],
+  "include": [
+    "components/**/*.tsx",
+    "next-env.d.ts",
+    "**/*"
+  ]
+}

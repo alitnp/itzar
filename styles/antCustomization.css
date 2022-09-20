@@ -1,0 +1,16 @@
+.ant-btn-primary,
+.ant-btn-primary:focus {
+    background-color: var(--btn-bg-color);
+    border-color: var(--btn-bg-color);
+}
+
+.ant-btn-primary:hover {
+    background-color: var(--btn-hover-bg-color);
+    border-color: var(--btn-hover-bg-color);
+}
+
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-btn {
+    border-radius: 8px !important;
+}
