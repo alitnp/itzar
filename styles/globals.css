@@ -29,6 +29,7 @@ a {
 .buttun-zar,
 .buttun-zar:hover,
 .buttun-zar:focus {
+    background-color: var(--bg-color);
     border-radius: 0 !important;
     height: 48px !important;
     box-shadow: -3px 4px 0 0 black !important;

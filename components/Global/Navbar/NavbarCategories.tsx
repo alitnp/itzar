@@ -47,7 +47,7 @@ const NavbarCategories: FC<INavbarCategories> = ({
 }) => {
 	return (
 		<div
-			className={`transition-all hidden duration-500 absolute z-[0] hover:opacity-100 hover:top-full md:flex w-full p-6 border-b bg-t-bg-color  ${
+			className={`transition-all hidden duration-500 absolute hover:opacity-100 hover:top-full md:flex w-full p-6 border-b bg-t-bg-color z-50 shadow-lg ${
 				parentHovered
 					? "top-full opacity-100"
 					: " -top-[300%] opacity-0"

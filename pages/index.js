@@ -1,8 +1,9 @@
+import MainSlider from "components/Home/MainSlider/MainSlider";
 import Head from "next/head";
 
 export default function Home() {
 	return (
-		<div>
+		<>
 			<Head>
 				{/* <title>Create Next App</title>
 				<meta
@@ -12,9 +13,11 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" /> */}
 			</Head>
 
-			<main></main>
+			<main>
+				<MainSlider />
+			</main>
 
 			<footer></footer>
-		</div>
+		</>
 	);
 }
