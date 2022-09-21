@@ -22,8 +22,7 @@ const Navbar: FC<INavbar> = () => {
 
 	return (
 		<>
-			<header className="relative">
-				<NavbarCategories parentHovered={showCategory} />
+			<header className="relative ">
 				<div className="w-full bg-t-bg-color">
 					<div className="min-h-[72px] w-full md:border-b border-t-border-color-24 flex items-center">
 						<div className="flex items-center justify-between w-full my-auto gap-x-4 t-container">
@@ -60,6 +59,7 @@ const Navbar: FC<INavbar> = () => {
 					</div>
 					<NavbarNavigation setShowCategory={setShowCategory} />
 				</div>
+				<NavbarCategories parentHovered={showCategory} />
 			</header>
 
 			<Drawer onClose={onClose} open={open} />

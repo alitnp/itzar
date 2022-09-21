@@ -47,10 +47,10 @@ const NavbarCategories: FC<INavbarCategories> = ({
 }) => {
 	return (
 		<div
-			className={`transition-all hidden duration-500 absolute hover:opacity-100 hover:top-full md:flex w-full p-6 border-b bg-t-bg-color z-50 shadow-lg ${
+			className={`transition-all hidden duration-300 absolute hover:max-h-screen max-h-0  hover:opacity-100 top-full md:flex w-full   bg-t-bg-color z-50 shadow-lg overflow-hidden hover:p-6 ${
 				parentHovered
-					? "top-full opacity-100"
-					: " -top-[300%] opacity-0"
+					? "max-h-screen opacity-100 p-6 border-b"
+					: "max-h-0 opacity-0 border-none"
 			}`}
 		>
 			<div className="flex items-stretch justify-between w-full gap-x-6 t-container">
@@ -94,7 +94,7 @@ const NavbarCategories: FC<INavbarCategories> = ({
 						<span className="text-xs font-normal">
 							محصولات شارژ شده پر طرفدار
 						</span>
-						<TcButtonZar>
+						<TcButtonZar classNames="w-full">
 							<p className="flex items-center justify-center gap-x-2">
 								مشاهده محصولات
 								<ArrowLeftIcon />

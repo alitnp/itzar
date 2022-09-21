@@ -1,18 +1,19 @@
-import { Button, ButtonProps } from "antd";
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 
-const TcButtonZar: FC<ButtonProps> = ({
+interface ITcButtonZar {
+	children: ReactNode;
+	classNames: string;
+}
+
+const TcButtonZar: FC<ITcButtonZar> = ({
 	children,
+	classNames,
 	...props
 }) => {
 	return (
-		<Button
-			{...props}
-			className="buttun-zar"
-			style={{ borderRadius: "0 !important" }}
-		>
+		<button {...props} className={`button-zar ${classNames}`}>
 			{children}
-		</Button>
+		</button>
 	);
 };
 

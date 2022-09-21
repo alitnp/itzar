@@ -26,15 +26,26 @@ a {
     padding: 0 8px;
 }
 
-.buttun-zar,
-.buttun-zar:hover,
-.buttun-zar:focus {
+.button-zar,
+.button-zar:hover,
+.button-zar:focus {
+    position: relative;
     background-color: var(--bg-color);
     border-radius: 0 !important;
     height: 48px !important;
-    box-shadow: -3px 4px 0 0 black !important;
+    box-shadow: -3px 4px 0 0 black;
     border-color: #2F3943 !important;
-    color: var(--text-color)
+    color: var(--text-color);
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid var(--text-color);
+}
+
+.button-zar:active {
+    top: 4px;
+    right: 3px;
+    box-shadow: none;
 }
 
 @media only screen and (min-width: 992px) {
