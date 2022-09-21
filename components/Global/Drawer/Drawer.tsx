@@ -1,18 +1,17 @@
-import { Drawer } from "antd";
+import { Drawer as AntDrawer } from "antd";
+import DrawerBrands from "components/Global/Drawer/DrawerBrands";
+import DrawerCategories from "components/Global/Drawer/DrawerCategories";
 import NavbarNavigationItems from "components/Global/Navbar/NavbarNavigationItems";
 import NavbarSearch from "components/Global/Navbar/NavbarSearch";
 import { useRouter } from "next/router";
 import React, { FC, useEffect, useState } from "react";
 
-interface INavbarDrawer {
+interface IDrawer {
 	onClose: () => void;
 	open: boolean;
 }
 
-const NavbarDrawer: FC<INavbarDrawer> = ({
-	onClose,
-	open,
-}) => {
+const Drawer: FC<IDrawer> = ({ onClose, open }) => {
 	//states
 	const [showDrawer, setShowDrawer] =
 		useState<boolean>(false);
@@ -28,7 +27,7 @@ const NavbarDrawer: FC<INavbarDrawer> = ({
 	if (!showDrawer) return null;
 
 	return (
-		<Drawer
+		<AntDrawer
 			title={
 				<p className="relative flex items-center justify-center my-auto text-2xl font-semibold top-1">
 					IT ZAR
@@ -39,10 +38,14 @@ const NavbarDrawer: FC<INavbarDrawer> = ({
 			open={open}
 		>
 			<NavbarSearch />
+			<div className="mt-4">
+				<DrawerCategories />
+				<DrawerBrands />
+			</div>
 			<div className="w-full h-0 my-2 border-b"></div>
 			<NavbarNavigationItems type="column" />
-		</Drawer>
+		</AntDrawer>
 	);
 };
 
-export default NavbarDrawer;
+export default Drawer;

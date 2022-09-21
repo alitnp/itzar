@@ -1,5 +1,5 @@
 import NavbarCategories from "components/Global/Navbar/NavbarCategories";
-import NavbarDrawer from "components/Global/Navbar/NavbarDrawer";
+import Drawer from "components/Global/Drawer/Drawer";
 import NavbarLoginButton from "components/Global/Navbar/NavbarLoginButton";
 import NavbarNavigation from "components/Global/Navbar/NavbarNavigation";
 import NavbarSearch from "components/Global/Navbar/NavbarSearch";
@@ -62,7 +62,7 @@ const Navbar: FC<INavbar> = () => {
 				</div>
 			</header>
 
-			<NavbarDrawer onClose={onClose} open={open} />
+			<Drawer onClose={onClose} open={open} />
 		</>
 	);
 };

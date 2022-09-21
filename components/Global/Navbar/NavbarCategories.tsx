@@ -1,7 +1,6 @@
 import TcButtonZar from "components/UI/Button/TcButtonZar";
 import ArrowLeftIcon from "components/UI/Icons/ArrowLeftIcon";
-import CategoryIcon from "components/UI/Icons/CategoryIcon";
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 
 interface INavbarCategories {
 	parentHovered: boolean;
@@ -48,10 +47,10 @@ const NavbarCategories: FC<INavbarCategories> = ({
 }) => {
 	return (
 		<div
-			className={`transition-all duration-500 absolute z-[0] hover:opacity-100 hover:top-full flex w-full p-6 border-b bg-t-bg-color  ${
+			className={`transition-all hidden duration-500 absolute z-[0] hover:opacity-100 hover:top-full md:flex w-full p-6 border-b bg-t-bg-color  ${
 				parentHovered
 					? "top-full opacity-100"
-					: " -top-[200%] opacity-0"
+					: " -top-[300%] opacity-0"
 			}`}
 		>
 			<div className="flex items-stretch justify-between w-full gap-x-6 t-container">
@@ -77,7 +76,10 @@ const NavbarCategories: FC<INavbarCategories> = ({
 					</div>
 					<div className="flex flex-wrap justify-between w-full pt-6 mt-6 border-t gap-x-6">
 						{fakeDataParent.map((item, index) => (
-							<p className="min-w-[72px] text-sm font-bold cursor-pointer hover:underline">
+							<p
+								key={index}
+								className="min-w-[72px] text-sm font-bold cursor-pointer hover:underline"
+							>
 								{item}
 							</p>
 						))}
