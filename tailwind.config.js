@@ -15,6 +15,7 @@ module.exports = {
 				"t-error-color": "var(--error-color)",
 				"t-bg-color": "var(--bg-color)",
 				"t-bg-gray": "var(--bg-gray)",
+				"t-bg-layer": "var(--bg-layer)",
 				"t-text-color": "var(--text-color)",
 				"t-secondary-text-color": "var(--secondary-text-color)",
 				"t-border-color-50": "var(--border-color-50)",

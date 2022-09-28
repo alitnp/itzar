@@ -2,7 +2,7 @@ import { FC, ReactNode } from "react";
 
 interface ITcButtonZar {
 	children: ReactNode;
-	classNames: string;
+	classNames?: string;
 }
 
 const TcButtonZar: FC<ITcButtonZar> = ({
